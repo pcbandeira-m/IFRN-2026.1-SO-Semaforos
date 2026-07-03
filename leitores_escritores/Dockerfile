@@ -3,7 +3,7 @@ FROM elixir:1.18-alpine
 WORKDIR /app
 
 # Copiar o arquivo Elixir
-COPY impl/ProdutorConsumidor.exs .
+COPY leitores_escritores.exs .
 
 # Executar o script Elixir
-CMD ["elixir", "ProdutorConsumidor.exs"]
+CMD ["elixir", "leitores_escritores.exs"]
