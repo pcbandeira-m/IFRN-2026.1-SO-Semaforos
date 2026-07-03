@@ -21,7 +21,7 @@ defmodule GerenciadorDados do
 
   def escrever(novo_dado) do
     # CALL é síncrono: o escritor pede para escrever e espera o OK do servidor
-    GenServer.call(__MODULE__, {:escrever, novo_dado})
+    GenServer.call(__MODULE__, {:escrever, novo_dado}) 
   end
 
   # --- Callbacks do Servidor (Onde a mágica acontece) ---
