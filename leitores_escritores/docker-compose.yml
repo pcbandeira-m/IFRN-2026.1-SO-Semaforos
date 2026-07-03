@@ -1,0 +1,8 @@
+services:
+  produtor-consumidor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: leitores-escritores
+    stdin_open: true
+    tty: true
